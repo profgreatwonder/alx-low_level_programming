@@ -1,18 +1,34 @@
+/*
+******************************************************************************
+*                                                                            *
+*                                                 _____  ______    ____  ___ *
+*    5-printf.c                                  /  _  \ |    |    \   \/  / *
+*                                               /  /_\  \|    |     \     /  *
+*    By: Barahmou <hamabarhamou@gmail.com>     /    |    \    |___  /     \  *
+*                                              \____|__  /_______ \/___/\  \ *
+*    Created: 2022-03-10 13:29:43 by Barahmou          \/        \/      \_/ *
+*    Updated: 2022-03-10 13:29:43 by Barahmou                                *
+*                                                                            *
+******************************************************************************
+*/
+
 #include "main.h"
+
 /**
- * main - Entry point
- * Return:0
- */
+* main - Entry point
+*
+* Return: Always 0 (Success)
+*/
 
 int main(void)
 {
-char c[9] = "_putchar";
-int i = 0;
-while (i < 8)
-{
-_putchar(c[i]);
-i++;
-}
-_putchar('\n');
-return (0);
+	char chaine[] = "_putchar\n";
+	int i = 0;
+
+	while (chaine[i])
+	{
+		_putchar(chaine[i]);
+		i++;
+	}
+	return (0);
 }
